@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vscode.css">
+</head>
+<body>
+    <script>
+		function setTheme(themeName) {
+			if (themeName === 'dark') {
+				document.documentElement.removeAttribute('data-theme'); // dark is default, so no data-theme attribute needed
+			}
+
+			if (themeName === 'light') {
+				document.documentElement.setAttribute('data-theme', themeName);
+			}
+			return;
+		}
+
+		// Determine initial theme: user preference or system preference
+		let theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+		setTheme(theme); // Apply the initial theme
+
+		// Listen for changes in the system theme preference
+		window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+			if (!localStorage.getItem('theme')) { // Only if no user preference is saved
+				setTheme(e.matches ? 'dark' : 'light');
+			}
+		});
+	</script>
+    <nav>
+        <ul>
+       <li><img src="C:\Users\SGN\OneDrive - Global Academy of Technology\Pictures\Screenshots\download (2).jpeg" alt="" class="img">  <a href="https://code.visualstudio.com">visual studio code</a></li>
+       <li> <a href="https://code.visualstudio.com/docs">docs</a></li>
+       <li><a href="https://code.visualstudio.com/updates/v1_96">updates</a></li>
+       <li><a href="https://code.visualstudio.com/blogs/2024/12/18/free-github-copilot">blogs</a></li>
+       <li><a href="https://code.visualstudio.com/api">Api</a></li>
+       <li><a href="https://marketplace.visualstudio.com/VSCode">Extensions</a></li>
+       <li><a href="https://code.visualstudio.com/docs/supporting/faq">FAQ</a></li>
+       <li> <a href="https://code.visualstudio.com/docs/copilot/overview">github Coplilot</a></li>
+       <li><input type="search" name="" id="" placeholder="search Docs" ></li>
+       <button class="btn">download</button>
+    </ul>
+    </nav>
+    <p>🚀 Get <a href="https://code.visualstudio.com/docs/copilot/setup-simplified"> GitHub Copilot Free </a>in VS Code!</p>
+    <h1> Your code editor.<br> Redefined with AI.</h1>
+    <center><button class="btn">Download for windows</button>
+        <button>get copilot free</button> </center>
+        <nav class="nav">
+            <ul>
+              <a href="https://vscode.dev">web</a>
+                <a href="https://code.visualstudio.com/insiders/">insider edition</a>or
+                <a href="https://code.visualstudio.com/Download">other plarforms</a>
+                <p>By using VS Code, you agree to its <a href="https://code.visualstudio.com/license">license </a>and <a href="https://www.microsoft.com/en-us/privacy/privacystatement">privacy statement</a></p>
+            </ul>
+        </nav>
+        <img src="C:\Users\SGN\OneDrive - Global Academy of Technology\Pictures\Screenshots\Screenshot 2025-01-08 121458.png" alt="" class="img1"><br>
+        <div class="container1">
+            <div class="grid-item1"><b>Choose the model that works for you</b><br>
+                Pick the model that works best for your <br>project and team, including GPT 4o and<br> Claude Sonnet.<br><img src="C:\Users\SGN\OneDrive - Global Academy of Technology\Pictures\Screenshots\Screenshot 2025-01-08 122535.png" alt="" class="img2"></div>
+            <div class="grid-item1"><b>An expert on your codebase</b><br>
+                Copilot locally indexes your codebase to<br> understand what’s relevant and supplements<br> that context to interactions with Copilot.<br><img src="C:\Users\SGN\OneDrive - Global Academy of Technology\Pictures\Screenshots\Screenshot 2025-01-08 122542.png" alt="" class="img3"></div>
+            <div class="grid-item1"><b>Personalized to your needs</b><br>
+                Copilot works the way you do. <br>Customize Copilot's prompts with <br>details about your team's workflows, <br>tools, and projects.<br><img src="C:\Users\SGN\OneDrive - Global Academy of Technology\Pictures\Screenshots\Screenshot 2025-01-08 122602.png" alt="" class="img4"></div>
+            </div>
+            <div class="rectangle">
+                <h2>Activate Copilot Free <br>in Visual Studio Code</h2>
+                <h3>No trial. No credit card required. Just your GitHub account.<br><a href="https://code.visualstudio.com/docs/copilot/setup-simplified" class="rect">Get copilot Free</a></h3>
+             </div>
+             <div class="container2">
+                <div class="grid-item2"><b>Create faster</b><br>
+                    Describe what you want to build in natural<br> language, and Copilot Edits takes care of<br>the rest. Copilot Edits makes changes across <br>files in your codebase with a UI designed <br>for rapid iteration. It's the fastest way to <br>add new functionality to your apps. <br><a href="https://code.visualstudio.com/docs/copilot/copilot-edits">Build with Copilot Edits</a><br>Copilot Chat is an expert on your codebase, <br>helping you to answer questions, explain <br>code, and propose fixes. Chat is available<br> wherever you need it - either as a dedicated <br>sidebar panel or directly from within your<br> code so you can stay in context. <br><a href="https://code.visualstudio.com/docs/copilot/getting-started-chat ">Get answers from Copilot Chat</a></div>
+                <div class="grid-item2"><img src="C:\Users\SGN\OneDrive - Global Academy of Technology\Pictures\Screenshots\Screenshot 2025-01-08 123938.png" alt="" class="img5"></div>
+            </div><br>
+            <div class="container3">
+                <div class="grid-item3"><b>Code efficiently</b><br>
+                    Copilot is your AI pair programmer infused<br> directly into the editor. Just start typing,<br> and Copilot will complete your thought by <br>offering a completion on the current line or<br> (sometimes) a whole new block of code.<br> Just like a coworker, you have the flexibility<br> to accept all, some, or none of Copilot's<br> suggestions. Copilot supports a broad <br>range of languages and frameworks.  <br><a href="https://code.visualstudio.com/docs/copilot/ai-powered-suggestions">Pair program with Copilot</a></div>
+                <div class="grid-item3"><img src="C:\Users\SGN\OneDrive - Global Academy of Technology\Pictures\Screenshots\Screenshot 2025-01-08 193808.png" class="img6"></div>
+            </div>
+            <div class="container4">
+                <div class="grid-item4"><b>Code with Extensions</b><br>
+                    Extensions let you customize VS Code and <br>Copilot with AI-powered features grounded <br>securely in your team's data and workflows. <br>Grab one from the gallery and add it<br> to chat like @azure, or <a href="https://code.visualstudio.com/docs/copilot/copilot-extensibility-overview"> build your own <br>Copilot extension </a> to power your team's unique scenarios.</div>
+                <div class="grid-item4"> <img src="C:\Users\SGN\OneDrive - Global Academy of Technology\Pictures\Screenshots\Screenshot 2025-01-11 230043.png" alt="" class="img7"></div>
+            </div>
+            <div class="container5">
+                <div class="grid-item5"><b>Code in any language</b><br>
+                    VS Code supports almost every major<br> programming language. Several ship in the<br> box, like JavaScript, TypeScript, CSS, and,<br> HTML, but extensions for others can be <br>found in the VS Code Marketplace.</div>
+                <div class="grid-item5"> <img src= "C:\Users\SGN\OneDrive - Global Academy of Technology\Pictures\Screenshots\Screenshot 2025-01-11 231536.png"alt="" class="img8"></div>
+            </div>
+            <div class="container6">
+                <div class="grid-item6"><b>Fully customizable</b><br>
+                    Customize your VS Code UI and layout so <br>that it fits your coding style.<br><a href="https://code.visualstudio.com/docs/getstarted/themes">Color themes</a>
+                    
+                     let you modify the colors in <br>VS Code's user interface to suit your <br>preferences and work environment.<br><a href="https://code.visualstudio.com/docs/getstarted/settings#_settings-sync">Settings Sync </a>
+                    
+                    enables you to share your <br>user settings across your VS Code instances<br> with the Settings Sync feature.<br><a href="https://code.visualstudio.com/docs/editor/profiles">      Profiles </a>
+                    
+              let you create sets of <br>customizations and quickly switch between <br>them or share them with others.<br></div>
+                <div class="grid-item6"><img src="C:\Users\SGN\OneDrive - Global Academy of Technology\Pictures\Screenshots\Screenshot 2025-01-11 232542.png" alt="" class="img9"></div>
+            </div>
+            <div class="container7">
+                <div class="grid-item7"><b>Code anywhere</b><br>
+                    Code wherever you're most productive, <br>whether you're connected to the cloud,<br> a remote repository, or in the browser with <br>VS Code for the Web (vscode.dev). <br><a href="https://code.visualstudio.com/docs/sourcecontrol/overview">Built in sources</a>
+                    
+                    Built-in Source Control empowers you with<br> Git support out-of-the-box. Many other<br> source control providers are available through extensions.<br> <a href="https://code.visualstudio.com/docs/remote/codespaces">GitHub Codespaces</a><br>
+                    
+                     provides cloud-powered development <br>environments for any activity - whether it's<br> a long-term project, or a short-term <br>task like reviewing a pull request.</div>
+                <div class="grid-item7"><img src="C:\Users\SGN\OneDrive - Global Academy of Technology\Pictures\Screenshots\Screenshot 2025-01-11 233256.png" alt="" class="img10"></div>
+            </div>
+            <p class="last"> <b>Code with rich features</b><br>
+                There's a lot more to an editor. Whether it's using built-in features or <br>rich extensions, there's something for everyone.</p>
+
+                <div class="grid-container">
+                    <div><a href="https://code.visualstudio.com/docs/terminal/basics"><b>Integrated terminal</b><br>
+                        </a>Use your favorite shell whether<br> it's zsh, pwsh, or git bash, all<br> inside the editor</div>
+                    <div><a href="https://code.visualstudio.com/docs/editor/debugging"><b>Run code</b><br>
+                       </a> Run and debug your code <br>without leaving your edito</div>
+                    <div><a href="https://code.visualstudio.com/docs/sourcecontrol/overview"><b>Version control</b><br>
+                       </a> Built-in support for git and <br>many other source control providers</div>  
+                    <div><a href="https://code.visualstudio.com/docs/editor/tasks"> <b> Build Controls</b><br> Build tasks
+                        </a>Run tools and analyze their results from within VS Code</div>
+                    <div><a href="https://code.visualstudio.com/updates/v1_66#_local-history"><b>Local Histroy</b><br></a>Local history
+                        Never lose your changes with automatically tracked local history.</div>
+                    <div><a href="https://code.visualstudio.com/docs/getstarted/themes">Themes</a><br>Your theme is an extension of your personality.<br> Add some flair to your editor <br>and add your touch</div>
+                    <div><a href="https://code.visualstudio.com/docs/editor/accessibility">Accessebilituy</a><br>Optimized experience for screen <br>readers, high contrast themes,<br> and keyboard-only navigation.</div>
+                    <div><a href="https://code.visualstudio.com/docs/editor/vscode-web">Web Support</a> <br>Whether you are on your phone, <br>tablet, or desktop, you can <br>access your code from anywhere.</div>
+                  </div><br>
+                  <footer>
+                     <a href="https://x.com/code"><img src="C:\Users\SGN\OneDrive - Global Academy of Technology\Pictures\Screenshots\twitter.jpg" alt="" class="twit"></a>
+                    <a href="https://github.com/microsoft/vscode"><img src="C:\Users\SGN\OneDrive - Global Academy of Technology\Pictures\Screenshots\github.png" alt="" class="git"></a>
+                    <a href="https://www.youtube.com/@code"><img src="C:\Users\SGN\OneDrive - Global Academy of Technology\Pictures\Screenshots\youtube.png" alt="" class="you"></a>    <br>
+                <ul class="list">
+                    <li><a href="https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d66407ed-3967-b000-4cfb-2c318cad363d">support</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/privacy/privacystatement">Privacy</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/legal/terms-of-use?oneroute=true">Terms of use</a></li>
+                    <li><a href="https://code.visualstudio.com/License">license</a></li>
+                </ul>
+                </footer>
+</body>
+</html>
